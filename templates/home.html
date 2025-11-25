@@ -26,13 +26,13 @@
                     <a class="nav-link active" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
+                    <a class="nav-link" href="sobre.html">Sobre</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="menu.html">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Chefs</a>
+                    <a class="nav-link" href="chefs.html">Chefs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="reserva.html">Reserva</a>
@@ -56,9 +56,9 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <h1 class="display-4 fw-bold mb-4">Bem-vindo ao site do <span class="text-blue">Sabor da Maré</span></h1>
-                <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, maiores quis assumenda dolor natus ab amet, soluta officia consequatur</p>
-                <button class="btn btn-sobre btn-lg px-4 me-2" href="#sobre">Sobre</button>
-                <button class="btn btn-menu btn-lg px-4" href="menu.html">Menu</button>
+                <p class="lead mb-4">O melhor da cozinha marinha com ingredientes frescos, vista deslumbrante e o charme inigualável do nosso litoral. Venha viver essa experiência!</p>
+                <a href="sobre.html" class="btn btn-primary px-4">Sobre</a>
+                <a href="menu.html" class="btn btn-menu px-4">Menu</a>
             </div>
         </div>
     </div>
@@ -79,11 +79,9 @@
             <img src="../static/img/post1.jpg" alt="Featured Post" class="img-fluid featured-img-cover">
           </div>
           <div class="col-md-6">
-            <h2>Featured Post Title</h2>
-            <p class="mt-3">This is a brief description of the featured post. It highlights the main points and draws
-              readers in to click and read more about the topic. Learn about the latest trends in technology, design,
-              and more.</p>
-            <a href="#" class="btn btn-primary mt-4">Read More</a>
+            <h2>O Paraíso à Beira-Mar que Você Precisa Conhecer</h2>
+            <p class="mt-3">Mergulhe na atmosfera única do Sabor da Maré. Descubra como combinamos a brisa do oceano, a vista deslumbrante e o melhor da culinária local para criar momentos inesquecíveis. Nossa localização é mais que um ponto no mapa; é uma experiência.</p>
+            <a href="sobre.html" class="btn btn-primary px-4">Sobre</a>
           </div>
         </div>
       </div>
@@ -93,15 +91,26 @@
 
 <!-- Blog Post Grid -->
 <div class="container">
+
+    <!-- INÍCIO DO TÍTULO DE SEÇÃO: NOSSAS LOCALIZAÇÕES -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="blog-header">
+            <h2 class="display-6 fw-bold">Nossas Localizações</h2>
+            <p class="lead">Os Cenários Exclusivos e os Roteiros Próximos ao Sabor da Maré.</p>
+          </div>
+        </div>
+      </div>
+      <!-- FIM DO TÍTULO DE SEÇÃO: NOSSAS LOCALIZAÇÕES -->
+
+
   <div class="row g-4">
     <div class="col-md-6 col-lg-4">
       <div class="card">
         <img src="../static/img/local5.jpg" class="card-img-top" alt="Post 1">
         <div class="card-body">
-          <h5 class="card-title">Blog Post 1</h5>
-          <p class="card-text">A short description of this blog post to capture the reader's attention and give them a
-            quick preview.</p>
-          <a href="#" class="btn btn-primary">Read More</a>
+          <h5 class="card-title">O Mar como companhia</h5>
+          <p class="card-text lead">Relaxe com os pés na areia e o paladar no céu. Detalhes sobre o nosso deck principal, o pôr do sol imbatível e a reserva para jantares românticos à beira-mar.</p>
         </div>
       </div>
     </div>
@@ -110,9 +119,8 @@
       <div class="card">
         <img src="../static/img/local6.jpg" class="card-img-top" alt="Post 2">
         <div class="card-body">
-          <h5 class="card-title">Blog Post 2</h5>
-          <p class="card-text">This is another exciting blog post. It provides value and insights on various topics.</p>
-          <a href="#" class="btn btn-primary">Read More</a>
+          <h5 class="card-title">O Mirante do Morro: A Vista Mais Bela da Costa</h5>
+          <p class="card-text lead">Suba o morro e seja recompensado com a visão mais espetacular do nosso litoral! Descubra como chegar ao nosso mirante favorito e garanta as fotos perfeitas.</p>
         </div>
       </div>
     </div>
@@ -121,22 +129,36 @@
       <div class="card">
         <img src="../static/img/local7.jpg" class="card-img-top" alt="Post 3">
         <div class="card-body">
-          <h5 class="card-title">Blog Post 3</h5>
-          <p class="card-text">A brief description of this blog post. Keep your readers engaged with interesting
-            content.</p>
-          <a href="#" class="btn btn-primary">Read More</a>
+          <h5 class="card-title">A Estrutura de Lazer Completa</h5>
+          <p class="card-text lead">Somos mais que um restaurante! Conheça nossa área de lazer familiar com piscinas, brinquedos e espaço seguro para as crianças. Desfrute da culinária marinha enquanto a família se diverte ao máximo.</p>
         </div>
       </div>
     </div>
+
+      <!-- INÍCIO DO TÍTULO DE SEÇÃO: PRATOS PRINCIPAIS (Com Botão) -->
+      <div class="row separar">
+        <div class="col-lg-12">
+          <div class="blog-header">
+            <h2 class="display-6 fw-bold">Pratos Principais</h2> 
+            <p class="lead">Uma amostra dos nossos pratos mais pedidos e as especialidades do chef. Confira o menu completo!</p>
+            
+            <!-- BOTÃO PARA ACESSAR O MENU COMPLETO -->
+            <a href="menu.html" class="btn btn-primary btn-lg mt-3 shadow-lg">
+                Ver Menu Completo
+            </a>
+            <!-- FIM DO BOTÃO -->
+          </div>
+        </div>
+      </div>
+      <!-- FIM DO TÍTULO DE SEÇÃO: PRATOS PRINCIPAIS -->
+
 
     <div class="col-md-6 col-lg-4">
       <div class="card">
         <img src="../static/img/princ1.png" class="card-img-top" alt="Post 4">
         <div class="card-body">
-          <h5 class="card-title">Blog Post 4</h5>
-          <p class="card-text">A brief description of this blog post. Keep your readers engaged with interesting
-            content.</p>
-          <a href="#" class="btn btn-primary">Read More</a>
+          <h5 class="card-title">Camarões ao Alho: O Toque Clássico da Casa</h5>
+          <p class="card-text lead">Um dos nossos best-sellers! Preparamos o camarão fresco do dia com a nossa manteiga de alho e ervas secretas.</p>
         </div>
       </div>
     </div>
@@ -145,10 +167,8 @@
       <div class="card">
         <img src="../static/img/princ2.jpg" class="card-img-top" alt="Post 5">
         <div class="card-body">
-          <h5 class="card-title">Blog Post 5</h5>
-          <p class="card-text">A brief description of this blog post. Keep your readers engaged with interesting
-            content.</p>
-          <a href="#" class="btn btn-primary">Read More</a>
+          <h5 class="card-title">Pesca do Dia: Frescor e leveza do peixe grelhado</h5>
+          <p class="card-text lead">Apostamos na sustentabilidade e no frescor!, Peixe frito feito na hora, no foco do sabor suave logo pela manhã.</p>
         </div>
       </div>
     </div>
@@ -157,10 +177,8 @@
       <div class="card">
         <img src="../static/img/princ3.jpg" class="card-img-top" alt="Post 6">
         <div class="card-body">
-          <h5 class="card-title">Blog Post 6</h5>
-          <p class="card-text">A brief description of this blog post. Keep your readers engaged with interesting
-            content.</p>
-          <a href="#" class="btn btn-primary">Read More</a>
+          <h5 class="card-title">Anéis de Lula Crocantes: Petisco Perfeito</h5>
+          <p class="card-text lead">Crocrância por fora, maciez por dentro. Nossa lula empanada é o petisco ideal para acompanhar aquela cerveja gelada na beira da piscina.</p>
         </div>
       </div>
     </div>
