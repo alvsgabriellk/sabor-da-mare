@@ -1,67 +1,53 @@
-
-.navbar {
-  background-color: #ffffff;
-  box-shadow: 15px 15px black !important;
+/* INICIO DO CÓDIGO DO HERO */
+.hero-section {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    min-height: 500px;
 }
 
-.navbar .nav-link,
-.navbar-brand {
-  color: rgb(45, 111, 241) !important;
+.hero-section {
+    /* Adiciona a imagem de fundo */
+    background-image: url('../static/img/fundo1.jpg');
+    
+    /* Configurações para a imagem */
+    background-size: cover;       /* Garante que a imagem cubra toda a seção */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    min-height: 600px;
+    padding-top: 80px;
+    position: relative;
 }
 
-.navbar .nav-link:hover {
-  color: rgb(45, 111, 241) !important;
+.text-blue {
+    color: rgb(45, 111, 241);
 }
 
-.logo-img {
-    width: 48px;
-    height: auto;
-    object-fit: contain;
+/* Botão "Sobre" - De btn-light (Branco) para Fundo Azul */
+.btn-sobre {
+    background-color: rgb(45, 111, 241) !important; /* Fundo Azul */
+    border-color: rgb(45, 111, 241) !important; /* Borda Azul */
+    color: white !important; /* Texto branco */
 }
 
-
-/* tirando a borda preta do botao menu */
-.navbar-toggler:focus,
-.navbar-toggler:active {
-    outline: none !important;
-    box-shadow: none !important;
+/* Efeito Hover do botão Sobre */
+.btn-sobre:hover {
+    background-color: #0056b3 !important; /* Azul um pouco mais escuro no hover */
+    border-color: #0056b3 !important;
 }
 
-.navbar-toggler {
-    border-color: rgb(45, 111, 241) !important; /* azul */
+.btn-menu {
+    background-color: rgba(255, 255, 255, 0.232) !important;
+    color: rgba(255, 255, 255, 0.708) !important;
 }
 
-.navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%232d6ff1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+/* Botão "Menu" - Efeito Hover de Outline Light para Fundo Azul */
+.btn-menu:hover {
+    background-color: rgb(45, 111, 241) !important; /* Fundo Azul no hover */
+    border-color: rgb(45, 111, 241) !important; /* Borda Azul no hover */
+    color: white !important; /* Texto Branco no hover */
 }
 
-/* efeito de tempo */
-.navbar-nav .nav-link {
-    transition: transform 0.2s ease, color 0.2s ease;
-}
+/* FIM DO CÓDIGO DO HERO */
 
-/* efeito flutuação nos links */
-.navbar-nav .nav-link:hover {
-    transform: translateY(-3px); /* sobe um pouquinho */
-    color: #0b37bc; /* muda a cor no hover */
-}
-
-/* efeito de tempo*/
-.navbar-toggler {
-    transition: transform 0.2s ease;
-}
-
-/* efeito flutuação no menu burguer */
-.navbar-toggler:hover {
-    transform: translateY(-3px);
-}
-
-/* sombra ao passar o mouse dps da flutuação */
-.navbar-nav .nav-link:hover {
-    transform: translateY(-3px);
-    color: #0b37bc;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
 
 
 
