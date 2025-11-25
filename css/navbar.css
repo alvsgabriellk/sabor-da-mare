@@ -39,6 +39,7 @@
 /* efeito de tempo */
 .navbar-nav .nav-link {
     transition: transform 0.2s ease, color 0.2s ease !important;
+    font-weight: 500 !important;
 }
 
 /* efeito flutuação nos links */
