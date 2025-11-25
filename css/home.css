@@ -124,5 +124,32 @@ body {
       color: #6c757d;
     }
 
+    div h2 {
+        color: rgb(181, 146, 95);
+    }
+
+    .card-title {
+        color: rgb(181, 146, 95) !important;
+    }
 
 
+
+    
+
+.separar {
+    padding-top: 60px;
+}
+
+.btn-primary {
+    background-color: rgb(45, 111, 241) !important;
+}
+
+.btn-menu:hover {
+    transform: translateY(-2px) !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+}
