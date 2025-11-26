@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/menu.css">
-    
+
     <!--LINKS PRO FOOTER-->
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
@@ -16,10 +16,6 @@
 
 </head>
 <body>
-
-
-
-
     
     <!--INICIO DO NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
@@ -70,77 +66,202 @@
 
         <!-- SUBTÍTULO -->
         <p class="menu-subtitle">
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            Pratos frescos e típicos da beira-mar, preparados para combinar com o clima de verão.
         </p>
     </div>
 
     <div class="d-flex justify-content-center mb-4">
-        <ul class="nav nav-pills" id="productTabs" role="tablist">
-          
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="kategori1-tab" data-bs-toggle="tab" data-bs-target="#kategori1-produk" type="button" role="tab" aria-controls="kategori1-produk" aria-selected="false">Todos</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="kategori2-tab" data-bs-toggle="tab" data-bs-target="#kategori2-produk" type="button" role="tab" aria-controls="kategori2-produk" aria-selected="false">Entradas</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="kategori2-tab" data-bs-toggle="tab" data-bs-target="#kategori2-produk" type="button" role="tab" aria-controls="kategori2-produk" aria-selected="false">Pratos Principais</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="kategori2-tab" data-bs-toggle="tab" data-bs-target="#kategori2-produk" type="button" role="tab" aria-controls="kategori2-produk" aria-selected="false">Pratos do Dia </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="kategori2-tab" data-bs-toggle="tab" data-bs-target="#kategori2-produk" type="button" role="tab" aria-controls="kategori2-produk" aria-selected="false">Bebidas</button>
-            </li>
-        </ul>
+        <ul class="nav nav-pills" id="productTabs">
+    <li class="nav-item">
+        <button class="nav-link active filter-btn" data-filter="all">Todos</button>
+    </li>
+    <li class="nav-item">
+        <button class="nav-link filter-btn" data-filter="entradas">Entradas</button>
+    </li>
+    <li class="nav-item">
+        <button class="nav-link filter-btn" data-filter="principais">Pratos Principais</button>
+    </li>
+    <li class="nav-item">
+        <button class="nav-link filter-btn" data-filter="dia">Pratos do Dia</button>
+    </li>
+    <li class="nav-item">
+        <button class="nav-link filter-btn" data-filter="bebidas">Bebidas</button>
+    </li>
+</ul>
+
     </div>
 
     <div class="cards-cardapios menu-grid">
-    <div class="menu-item-card">
+    <div class="menu-item-card" data-category="principais">
         <div class="item-image">
-            <img src="https://via.placeholder.com/100" alt="Nome do Prato 1">
+            <img src="../static/img/princ1.png" alt="Camarões ao Alho: O Toque Clássico da Casa">
         </div>
         <div class="item-details">
             <div class="item-header">
-                <h3>Featured Product Title</h3>
-                <span class="price">$49.99</span>
-                <span class="tag">Mais Vendido</span>
+                <h3>Camarões ao Alho: O Toque Clássico da Casa</h3>
+                <span class="price">R$ 19,99</span>
             </div>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            <p class="description">Um dos nossos best-sellers! O camarão fresco do dia com a nossa manteiga de alho e ervas.
             </p>
-            <a href="#" class="btn btn-primary btn-sm mt-2">Ver Detalhes</a>
         </div>
     </div>
-    <div class="menu-item-card">
+    <div class="menu-item-card" data-category="principais">
         <div class="item-image">
-            <img src="https://via.placeholder.com/100/333333" alt="Nome do Prato 2">
+            <img src="../static/img/princ2.jpg" alt="Nome do Prato 2">
         </div>
         <div class="item-details">
             <div class="item-header">
-                <h3>Second Product Title</h3>
-                <span class="price">$29.99</span>
-                <span class="tag">Vegetariano</span>
+                <h3>Pesca do Dia: Frescor e leveza do peixe grelhado</h3>
+                <span class="price">R$ 29,99</span>
             </div>
-            <p class="description">Consectetur adipiscing elit. Lorem ipsum dolor sit amet, integer posuere erat a ante.</p>
-            <a href="#" class="btn btn-primary btn-sm mt-2">Ver Detalhes</a>
+            <p class="description">Apostamos na sustentabilidade e no frescor!, Peixe frito feito na hora, no foco do sabor suave logo pela manhã.</p>
         </div>
     </div>
+    <div class="menu-item-card" data-category="principais">
+        <div class="item-image">
+            <img src="../static/img/princ3.jpg" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>Anéis de Lula Crocantes: Petisco Perfeito</h3>
+                <span class="price">R$ 29,99</span>
+            </div>
+            <p class="description">Crocrância por fora, maciez por dentro. Nossa lula empanada é o petisco ideal para acompanhar aquela cerveja gelada na beira da piscina.</p>
+           
+        </div>
+    </div>
+    <div class="menu-item-card" data-category="principais">
+        <div class="item-image">
+            <img src="../static/img/peixefrito.jpg" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>Peixe Frito com Arroz e Salada</h3>
+                <span class="price">R$ 55,00</span>
+                <span class="tag"></span>
+            </div>
+            <p class="description">Peixe crocante servido com acompanhamentos leves. Um clássico das barracas de praia.</p>
+            
+        </div>
+    </div>
+    <div class="menu-item-card" data-category="dia">
+        <div class="item-image">
+            <img src="../static/img/moqueca-de-peixe(pratos do dia).jpg" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>Moqueca de Peixe</h3>
+                <span class="price">R$ 48,00</span>
+                <span class="tag"></span>
+            </div>
+            <p class="description">Molho encorpado com leite de coco e temperos frescos. Servida bem quente e aromática..</p>
+          
+        </div>
+    </div>
+    <div class="menu-item-card" data-category="dia">
+        <div class="item-image">
+            <img src="../static/img/receita-bobo-de-camarao(entrada).jpg" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>Bobó de Camarão</h3>
+                <span class="price">R$ 52,00</span>
+                <span class="tag"></span>
+            </div>
+            <p class="description">Cremoso e saboroso, feito com mandioca. Prato típico e muito pedido no litoral.</p>
+         
+        </div>
+    </div>
+    <div class="menu-item-card" data-category="bebidas">
+        <div class="item-image">
+            <img src="../static/img/coco-gelado (bebidas).jpg" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>Coco Gelado</h3>
+                <span class="price">R$ 18,00</span>
+                <span class="tag"></span>
+            </div>
+            <p class="description">Refrescante e natural. Perfeito para hidratar no calor. </p>
+           
+        </div>
+    </div>
+    <div class="menu-item-card" data-category="bebidas">
+        <div class="item-image">
+            <img src="../static/img/caipirinha-limao(bebidas).jpg" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>Caipirinha de limão</h3>
+                <span class="price">R$ 18,00</span>
+                <span class="tag"></span>
+            </div>
+            <p class="description">Bebida cítrica e gelada. Combina perfeitamente com clima de praia.</p>
+            
+        </div>
+    </div>
+    <div class="menu-item-card" data-category="bebidas">
+        <div class="item-image">
+            <img src="../static/img/suco-abacaxi-hortelã(bebidas).jpg" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>Suco de Abacaxi com Hortelã</h3>
+                <span class="price">R$ 15,00</span>
+                <span class="tag"></span>
+            </div>
+            <p class="description">Gelado e perfumado. Refresca e mata a sede na hora.</p>
+           
+        </div>
+    </div>
+    <div class="menu-item-card" data-category="entradas">
+        <div class="item-image">
+            <img src="../static/img/batata-frita(entrada).webp" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>Batata Frita</h3>
+                <span class="price">R$ 15,00</span>
+                <span class="tag"></span>
+            </div>
+            <p class="description">Batatas crocanates na boca com tempero e acompanhamentos.</p>
+         
+        </div>
+    </div>
+    <div class="menu-item-card" data-category="entradas">
+        <div class="item-image">
+            <img src="../static/img/camarao-frito(entrada).webp" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>Camarão Frito</h3>
+                <span class="price">R$ 38,00</span>
+                <span class="tag"></span>
+            </div>
+            <p class="description">Crocante e bem temperado. Ótimo para petiscar na beira da praia.</p>
+       
+        </div>
+    </div>
+    <div class="menu-item-card" data-category="entradas">
+        <div class="item-image">
+            <img src="../static/img/queijo-qualho(entrada).jpg" alt="Nome do Prato 2">
+        </div>
+        <div class="item-details">
+            <div class="item-header">
+                <h3>queijo Qualho Assado</h3>
+                <span class="price">R$ 12,00</span>
+                <span class="tag"></span>
+            </div>
+            <p class="description">Servido no espeto, bem dourado. Simples e clássico no litoral.</p>
+          
+        </div>
     </div>
 
 
-
-
-
-
+    </div>
 
 </section>
     
-
-
-
-
-
-
 
 <!--INICIO DO FOOTER-->
 <footer class="mt-auto pt-4 pb-4">
@@ -213,6 +334,31 @@
 <!--FINAL DO FOOTER-->
 
 <!--CÓDIGO PRO NAVBAR-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>  
+<script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const items = document.querySelectorAll(".menu-item-card");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            // marca botão ativo
+            buttons.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.dataset.filter;
+
+            items.forEach(item => {
+                const category = item.dataset.category;
+
+                if (filter === "all" || category === filter) {
+                    item.style.display = "flex";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    });
+</script>  
 </body>
 </html>
