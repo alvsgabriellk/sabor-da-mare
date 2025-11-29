@@ -1,5 +1,13 @@
 body {
-    background-color: rgba(45, 110, 241, 0.256) !important;
+    background-image: url('../static/img/bodyfundo4.jpg'); 
+    
+    background-repeat: no-repeat;
+    
+    /* Cobre tudo */
+    background-size: cover;
+    
+    /* 4. Fixa a imagem, n vai rolar tudo */
+    background-attachment: fixed;
 }
 
 /* INICIO DO CÓDIGO DO HERO */
@@ -10,45 +18,48 @@ body {
 }
 
 .hero-section {
-    /* Adiciona a imagem de fundo */
-    background-image: url('../static/img/fundo1.jpg');
+    background-image: url('../static/img/fundoprinc3.webp');
     
-    /* Configurações para a imagem */
-    background-size: cover;       /* Garante que a imagem cubra toda a seção */
-    background-position: center;  /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    /* Configuração para a imagem */
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
     min-height: 600px;
     padding-top: 80px;
     position: relative;
 }
 
 .text-blue {
-    color: rgb(45, 111, 241);
+    color: #A82C2C;
 }
 
-/* Botão "Sobre" - De btn-light (Branco) para Fundo Azul */
-.btn-sobre {
-    background-color: rgb(45, 111, 241) !important; /* Fundo Azul */
-    border-color: rgb(45, 111, 241) !important; /* Borda Azul */
-    color: white !important; /* Texto branco */
+.btn-sobre-hero {
+    background-color: #A82C2C !important;
+    color: #FFF8E1 !important;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
 }
 
-/* Efeito Hover do botão Sobre */
-.btn-sobre:hover {
-    background-color: #0056b3 !important; /* Azul um pouco mais escuro no hover */
-    border-color: #0056b3 !important;
+.btn-sobre-hero:hover {
+    background-color: #B88A00 !important;
+    transform: translateY(-2px) !important; 
 }
 
 .btn-menu {
     background-color: rgba(255, 255, 255, 0.232) !important;
-    color: rgba(255, 255, 255, 0.708) !important;
+    color: #FFF8E1 !important; 
+    border: 2px solid #FFF8E1 !important; 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease !important;
 }
 
-/* Botão "Menu" - Efeito Hover de Outline Light para Fundo Azul */
+
 .btn-menu:hover {
-    background-color: rgb(45, 111, 241) !important; /* Fundo Azul no hover */
-    border-color: rgb(45, 111, 241) !important; /* Borda Azul no hover */
-    color: white !important; /* Texto Branco no hover */
+    background-color: #FFF8E1 !important;
+    color: #4E342E !important; 
+}
+
+.text-escolha {
+    color: #FFF8E1;
 }
 
 /* FIM DO CÓDIGO DO HERO */
@@ -64,28 +75,30 @@ body {
 
 /* INICIO DO HOME DO SITE / BLOG E MOSTRAS */
 .featured-post {
-      background-color: #ffffff;
+      background-color: #4E342E;
       padding: 40px;
       border-radius: 10px;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
     }
 
     .featured-post .featured-img-cover {
-      width: 100% !important;
-      height: 350px !important;
-      object-fit: cover !important;
-      border-radius: 10px !important;
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
     }
 
     .featured-post img {
-        border-radius: 10px !important;
+        border-radius: 10px;
     }
 
     .card {
-      border: none !important;
+      border: none;
       border-radius: 15px !important;
       overflow: hidden !important;
       box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+      background-color: #4E342E !important;
+      border-bottom: 5px solid #A82C2C !important;
     }
 
     .card img {
@@ -106,7 +119,17 @@ body {
     }
 
     .card-title {
-      font-weight: bold;
+        color: #FFF8E1 !important;
+        font-weight: bold !important;
+        font-size: 1.2em !important;
+        text-align: center !important;
+    }
+
+    .card-text {
+        color: #FFF8E1 !important;
+        padding: 15px !important;
+        font-size: 0.9em !important;
+        line-height: 1.5 !important;
     }
 
     .blog-header {
@@ -124,22 +147,37 @@ body {
       color: #6c757d;
     }
 
-    div h2 {
-        color: rgb(181, 146, 95);
-    }
 
-    .card-title {
-        color: rgb(181, 146, 95) !important;
-    }
+.btn-main {
+    background-color: #A82C2C !important;
+    color: #FFF8E1 !important;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+}
+
+.btn-main:hover {
+    background-color: #B88A00 !important;
+    transform: translateY(-2px) !important; 
+}
 
 
 .separar {
     padding-top: 60px;
 }
 
-.btn-primary {
-    background-color: rgb(45, 111, 241) !important;
+.btn-menu-escolha {
+    background-color: #A82C2C !important;
+    color: #FFF8E1 !important;
+    border: none !important;
+    font-size: 1.1em !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    transition: background-color 0.3s ease !important;
 }
+
+.text-title {
+    color: #FFF8E1 !important;
+}
+
 
 .btn-menu:hover {
     transform: translateY(-2px) !important;
@@ -147,11 +185,14 @@ body {
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    transition: all 0.3s ease-in-out;
+    transform: translateY(-2px) !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.title-section {
+    color: #B88A00 !important;
 }
 
 .div-separar {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
-

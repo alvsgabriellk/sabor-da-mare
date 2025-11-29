@@ -1,8 +1,7 @@
-/* Estilos para a tag footer */
 footer {
-    background-color: #ffffff;
-    /* elevação com sombra */
+    background-color: #4E342E;
     box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1) !important; 
+
     /* footer em cima do body */
     position: relative !important; 
     z-index: 10 !important;
@@ -12,22 +11,25 @@ footer {
 
 
 .title-fot {
-    color: rgb(181, 146, 95) !important;
-    /* Adiciona peso e margem inferior para destacar o título */
+    color: #FFF8E1 !important;
+    border-bottom: 2px solid #A82C2C !important;
+    /* Adiciona "peso" e margem pra destac o titulo */
     font-weight: bold !important;
     margin-bottom: 15px !important; 
 }
 
 .text-lg,
 footer p {
-    color: #6c757d;
+    color: #FFF8E1;
     font-weight: normal !important;
 }
 
 
 .barra {
-    background-color: rgb(181, 146, 95) !important;
-    height: 1px !important; /* Espessura */
+    background-color: #A82C2C !important;
+
+    /* barra do tamanho crt */
+    height: 1px !important; 
     border: none !important;
     opacity: 0.5 !important;
 }
@@ -37,10 +39,10 @@ footer p {
     font-size: 0.9em !important;
 }
 
-
 .list-unstyled .nav-link {
-    color: #6c757d; 
+    color: #FFF8E1; 
     padding: 8px 10px; 
+
     /* Torna o link um bloco para que a sombra e o transform funcionem */
     display: inline-block; 
     transition: all 0.3s ease-in-out; 
@@ -48,15 +50,10 @@ footer p {
     margin: 2px 0; 
 }
 
-
 .list-unstyled .nav-link:hover {
-    background-color: rgb(45, 111, 241); 
-    color: whitesmoke; 
-    
-    /* Movimento de "flutuação": sobe 4px */
+    background-color: #A82C2C;
+    text-decoration: underline;
     transform: translateY(-4px) !important; 
-    
-    /* Sombra para criar a elevação do "flutuando" */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12) !important; 
 }
 
@@ -64,3 +61,4 @@ footer p {
     color: inherit !important; 
     transition: color 0.3s ease-in-out !important;
 }
+
